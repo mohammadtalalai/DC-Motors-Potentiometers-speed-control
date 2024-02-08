@@ -29,19 +29,23 @@ void loop()
     Serial.read();
     switch(Reading) {
       case 'L' :
-      digitalWrite(motor1 ,HIGH);
+      digitalRead(btn1)==HIGH ;
+      Serial.println("btn1 Turns On");
       break ; 
       
       case 'C' :
-      digitalWrite(motor1 ,LOW);
+      digitalRead(btn1)==LOW;
+      Serial.println("btn1 Turns Off");
       break ; 
       
       case 'R' :
-      digitalWrite(motor2 ,HIGH);
+      digitalRead(btn2)==HIGH ;
+      Serial.println("btn2 Turns On");
       break ; 
       
       case 'M' :
-      digitalWrite(motor2 ,LOW);
+      digitalRead(btn2)==LOW;
+      Serial.println("btn2 Turns Off");
       break ; 
     }
   }
